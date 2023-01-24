@@ -5,7 +5,7 @@ public class Recursion2 {
 
     public static int binarySearch(int key, int left, int right) {
         if (right == left) {
-            return sorted[left];
+            return left;
         } else {
             int middle = (left + right) / 2;
             if (sorted[middle] == key)
