@@ -31,7 +31,7 @@ public class Recursion2 {
             return fib(n - 2) + fib(n - 1);
     }
 
- }
+ 
 
     /**
      * recursively adds up numbers
