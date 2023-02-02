@@ -20,16 +20,38 @@ public class FavoriteList extends ListADT<Favorite> {
 
     @Override
     public void add(int index, Favorite item) {
-        // TODO Auto-generated method stub
-        
+        for( int i = this.getSize(); i > index; i--)
+        this.favorites[i] = this.favorites[i-1];
+        this.favorites[index] = item;
+
+        this.numFavorites++;
+
+        if ((index < 0) || (index > this.getSize() ))
+            throw new ListException("Index " + index + " is invalid for a " +
+                                      "list of size " + this.getSize());
+
     }
+
+ @Override
+ public String toString(){
+    String s = "";
+    for( int i =0;i< this.getSize(); i++)
+    s+= "item" + i + "is " + this.get(i).toString() + "/n";
+    return s;
+ }
 
     @Override
     public void remove(int index) {
+
         for( int i = index+1; i <this.getSize(); i++)
         this.favorites[i-1] = this.favorites[i];
+
         this.numFavorites--;
-        
+
+        if ((index < 0) || (index >= this.getSize() ))
+            throw new ListException("Index " + index + " is invalid for a " +
+                                      "list of size " + this.getSize());
+
 
     }
 
