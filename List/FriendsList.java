@@ -1,3 +1,5 @@
+package List;
+
 public class FriendsList extends ListADT<Friend> {
     private Node<Friend> head;
     private int numFriends;

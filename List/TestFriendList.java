@@ -1,3 +1,4 @@
+package List;
 public class TestFriendList {
     public static void main(String[] args) {
         FriendsList friends = new FriendsList();

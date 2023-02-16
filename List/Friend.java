@@ -1,3 +1,4 @@
+package List;
 public class Friend {
     private String username;
     private boolean status; //true for online, false for offline

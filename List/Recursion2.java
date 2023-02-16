@@ -1,3 +1,4 @@
+package List;
 public class Recursion2 {
 
     private static int[] intArray = { 2, 7, 3, 20, 8, 10 };

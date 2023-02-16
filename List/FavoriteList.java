@@ -1,3 +1,5 @@
+package List;
+
 public class FavoriteList extends ListADT<Favorite> {
     private static final int MAX_FAVORITES = 50;
     private int numFavorites;

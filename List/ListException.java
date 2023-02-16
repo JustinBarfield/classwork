@@ -1,3 +1,4 @@
+package List;
 
 public class ListException extends RuntimeException {
     public ListException(String s) {
