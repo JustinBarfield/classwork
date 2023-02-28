@@ -1,28 +1,24 @@
-package Stack;
-
 public class TestStack {
     public static void main(String[] args) {
-        StackArrayBased<Integer> stack = new StackArrayBased<>()<Integer>();
+        StackArrayBased<Character> stack = new StackArrayBased<Character>();
 
-        for(int i = 0; i<=5; i++){
-            Integer num = i;
+        for (char i = 'a'; i <= 'z'; i++) {
+            Character num = i;
             stack.push(num);
-            
         }
-        System.out.println("original stack");
+        System.out.println("Original Stack");
         System.out.println(stack.toString());
         System.out.println();
 
-        System.out.println("test pop");
-        for(int i = 0; i<=3; i++){
+        System.out.println("Test Pop");
+        for (int i = 1; i <= 3; i++) {
             System.out.println(stack.pop());
-
         }
         System.out.println(stack);
-        
+
         System.out.println();
-        System.out.println("test Pop All");
-        
+        System.out.println("Test Pop all");
+        stack.popAll();
+        System.out.println(stack.toString());
     }
-    
 }
